@@ -1,0 +1,66 @@
+#wrapper {
+	float: left;
+	width: 100%;
+}
+
+#jsonInput, #jsonOutput {
+	width: 500px;
+	height: 70%;
+	float: left;
+	margin: 20px;
+}
+
+/* explorer css */
+.json-explorer {
+	background: #eee;
+	padding: 20px;
+	border: 1px solid silver;
+}
+
+.json-explorer ul {
+	list-style-type: none;
+	margin: 0px;
+	font-size: 18px;
+}
+
+.json-explorer li {
+	position: relative;
+	line-height: 20px;
+}
+
+.json-explorer li:before {
+	content: '\2022';
+	position: absolute;
+	left: -15px;
+	width: 100%;
+}
+
+.json-explorer li.parent {
+	cursor: pointer;
+}
+
+.json-explorer li.parent:before {
+	content: '\25B6';
+	font-size: .5em;
+	display: block;
+	cursor: pointer;
+}
+.json-explorer li.parent.expanded:before {
+	content: '\25BC';
+}
+
+.json-explorer li.parent > ul {
+	display: none;
+	cursor: auto;
+}
+.json-explorer li.parent.expanded > ul {
+	display: block;
+}
+
+/* theming */
+.json-explorer .key {
+	color: #334D5C;
+}
+.json-explorer .value {
+	color: #45B29D;
+}

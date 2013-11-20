@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>JSON Explorer</title>
+
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+<p>{"key": "val", "recur" : { "obj1": "val1", "obj2": "val2"}}</p>
+<p>{"key": "val", "recur" : { "obj1": "val1", "obj2": "val2", "obj3": {"key": "val", "recur" : { "obj1": "val1", "obj2": "val2"}}}}</p>
+	<div id="wrapper">
+		<textarea name="input" id="jsonInput"></textarea>
+
+		<div id="jsonOutput"></div>		
+	</div>	
+
+	<p>
+		<button id="apply">Apply</button>
+	</p>
+<script src="json-explorer.js"></script>
+</body>
+</html>
