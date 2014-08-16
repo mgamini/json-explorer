@@ -32,7 +32,6 @@
 	content: '\2022';
 	position: absolute;
 	left: -15px;
-	width: 100%;
 }
 
 .json-explorer li.parent {
